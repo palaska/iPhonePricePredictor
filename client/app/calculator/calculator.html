@@ -1,0 +1,58 @@
+<navbar></navbar>
+<div class="container">
+<h1 style="text-align:center;">Choose the features below</h1>
+  <div class="row">
+
+    <div class="col-xs-3">
+      <div class="form-group">
+        <label>Model</label>
+        <select class="form-control" ng-model="item.model">
+          <option value="">Choose</option>
+          <option value="0,0,0">iPhone 4</option>
+          <option value="1,0,0">iPhone 5</option>
+          <option value="0,1,0">iPhone 6</option>
+          <option value="0,0,1">iPhone 6 Plus</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="col-xs-3">
+      <div class="form-group">
+        <label>Memory</label>
+        <select class="form-control" ng-model="item.memory">
+          <option value="">Choose</option>
+          <option value="-0.77882">8 GB</option>
+          <option value="-0.41631">16 GB</option>
+          <option value="0.30873">32 GB</option>
+          <option value="1.75881">64 GB</option>
+          <option value="4.65896">128 GB</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="col-xs-3">
+      <div class="form-group">
+        <label>Guarantee</label>
+        <select class="form-control" ng-model="item.guarantee">
+          <option value="">Choose</option>
+          <option value="0">Yes</option>
+          <option value="1">No</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="col-xs-3">
+      <div class="form-group">
+        <label>Day</label>
+        <input class="form-control" type="text" ng-model="item.day" placeholder="5">
+      </div>
+    </div>
+
+  </div>
+<div class="row">
+  <button class="btn btn-primary btn-lg" type="button" ng-click="calculate()">Calculate</button>
+  <p style="margin-top:20px; margin-left:20px;">Price: {{price}} TL</p>
+</div>
+
+</div>
+
